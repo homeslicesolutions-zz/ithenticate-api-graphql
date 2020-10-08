@@ -12,7 +12,7 @@ const server = new ApolloServer({
     ithenticateAPI: new IthenticateAPI(),
   }),
   cors: {
-    origin: "*",
+    origin: "null",
     credentials: true,
   },
 });
