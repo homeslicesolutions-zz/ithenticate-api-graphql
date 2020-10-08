@@ -1,0 +1,9 @@
+{
+  "name": "ithenticate-api-graphql",
+  "version": "0.0.1",
+  "description": "GraphQL Interface for the Ithenticate's XMLRPC API.  Also includes extra tools catered to Ithenticate ",
+  "main": "index.js",
+  "repository": "https://github.com/homeslicesolutions/ithenticate-api-graphql.git",
+  "author": "joe.vu@homeslicesolutions.com",
+  "license": "MIT"
+}

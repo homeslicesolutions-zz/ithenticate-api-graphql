@@ -1,2 +1,3 @@
-# ithenticate-api-graphql
+# Ithenticate API Graphql
+
 Ithenticate API Graphql Interface
