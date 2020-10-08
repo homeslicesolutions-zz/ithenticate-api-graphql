@@ -37,9 +37,9 @@
   },
   "dependencies": {
     "apollo-datasource": "^0.7.2",
-    "apollo-server-express": "^2.18.2",
+    "apollo-server": "^2.18.2",
     "davexmlrpc": "^0.4.26",
-    "express": "^4.17.1",
+    "graphql": "^15.3.0",
     "html-to-docx": "^1.1.31"
   },
   "engines": {

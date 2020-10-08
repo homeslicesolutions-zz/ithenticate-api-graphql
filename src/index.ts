@@ -1,12 +1,18 @@
-import express from "express";
+import { ApolloServer } from "apollo-server";
+import IthenticateAPI from "./dataSource/IthenticateAPI";
+import resolvers from "./schema/resolvers";
+import typeDefs from "./schema/typeDefs";
 
-const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  dataSources: () => ({
+    ithenticateAPI: new IthenticateAPI(),
+  }),
 });
 
-app.listen(PORT, () => {
-  console.log(`App listening on ${PORT}`);
+server.listen({ port: PORT }).then(({ url }) => {
+  console.log(`🚀  Server ready at ${url}`);
 });
