@@ -11,6 +11,7 @@ const server = new ApolloServer({
   dataSources: () => ({
     ithenticateAPI: new IthenticateAPI(),
   }),
+  cors: false,
 });
 
 server.listen({ port: PORT }).then(({ url }) => {
