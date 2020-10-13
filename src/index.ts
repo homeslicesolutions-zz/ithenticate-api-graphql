@@ -12,7 +12,7 @@ const server = new ApolloServer({
     ithenticateAPI: new IthenticateAPI(),
   }),
   cors: {
-    origin: ["null", "http://local.live.test.cheggnet.com"],
+    origin: ["null", "https://local.live.test.cheggnet.com"],
     credentials: true,
   },
 });
